@@ -1,0 +1,19 @@
+{
+  "name": "fluentplayer-developer-docs",
+  "description": "Developer documentation for the FluentPlayer WordPress plugin",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview",
+    "build:gh-pages": "VITEPRESS_BASE=/fluentplayer-developer-docs/ vitepress build",
+    "extract:hooks": "node bin/extract-hooks.mjs",
+    "extract:routes": "node bin/extract-routes.mjs",
+    "extract": "npm run extract:hooks && npm run extract:routes"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.3"
+  },
+  "dependencies": {
+    "vitepress-plugin-glossary": "^1.0.6"
+  }
+}

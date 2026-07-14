@@ -1,0 +1,9 @@
+{
+  "WPFluent": "The framework FluentPlayer is built on — a Laravel-style application layer (router, models, request lifecycle) for WordPress plugins.",
+  "policy": "A WPFluent authorization class under app/Http/Policies that gates a REST route group by checking a capability before the controller runs.",
+  "smartcode": "A merge-tag token (for example a FluentCRM contact field) that FluentPlayer resolves to a real value in supported player text.",
+  "dynamic source": "A media source resolved at render time from a URL, post meta, or filter override rather than a fixed stored value.",
+  "layer": "An interactive element rendered over the player — a text/button overlay, CTA/action bar, hotspot, or ad.",
+  "coverage": "The fraction of a media's distinct content actually watched, computed by merging overlapping watched segments. The basis for completion in the progression evaluator.",
+  "Vidstack": "The underlying open-source media player element FluentPlayer wraps (with hls.js for HLS streaming)."
+}
