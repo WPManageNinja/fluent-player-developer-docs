@@ -24,9 +24,11 @@ jobs:
           node-version: 20
           cache: npm
       - run: npm ci
-      # config.mjs derives the base path from GITHUB_REPOSITORY when GITHUB_ACTIONS is set,
-      # so no VITEPRESS_BASE needed here. Set a CNAME below if using a custom domain.
+      # Custom domain (public/CNAME → dev.fluentplayer.com) serves from root, so base = "/".
+      # Drop this env to fall back to the auto /repo-name/ base for a plain project-Pages URL.
       - run: npm run build
+        env:
+          VITEPRESS_BASE: /
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
