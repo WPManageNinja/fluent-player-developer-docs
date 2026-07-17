@@ -17,6 +17,7 @@ export default defineConfig({
   description: 'Developer documentation for extending the FluentPlayer WordPress plugin — hooks, REST API, extension guides, and the JS API.',
   cleanUrls: true,
   lastUpdated: true,
+  appearance: 'dark',
   srcExclude: ['README.md'],
   themeConfig: {
     nav: [
