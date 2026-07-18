@@ -19,7 +19,11 @@ export default defineConfig({
   lastUpdated: true,
   appearance: 'dark',
   srcExclude: ['README.md'],
+  head: [
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }],
+  ],
   themeConfig: {
+    logo: '/logo.svg',
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Get Started', link: '/getting-started/' },
