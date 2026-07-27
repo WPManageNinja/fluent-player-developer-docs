@@ -17,8 +17,13 @@ export default defineConfig({
   description: 'Developer documentation for extending the FluentPlayer WordPress plugin — hooks, REST API, extension guides, and the JS API.',
   cleanUrls: true,
   lastUpdated: true,
+  appearance: 'dark',
   srcExclude: ['README.md', 'devdocs.md', '_generated/**'],
+  head: [
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }],
+  ],
   themeConfig: {
+    logo: '/logo.svg',
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Get Started', link: '/getting-started/' },

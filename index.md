@@ -5,6 +5,9 @@ hero:
   name: "FluentPlayer Developer Docs"
   text: "Extend the player in code"
   tagline: Hooks, REST API, extension points, and the JS API for the FluentPlayer WordPress plugin.
+  image:
+    src: /logo.svg
+    alt: FluentPlayer
   actions:
     - theme: brand
       text: Get Started
