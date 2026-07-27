@@ -5,13 +5,13 @@ description: Specialist template for FluentPlayer action/filter reference pages 
 
 # FluentPlayer Hooks Reference Template
 
-Hook reference pages document `do_action`/`apply_filters` extension points. FluentPlayer exposes **12 actions** and **62 filters** (free tree) under the `fluent_player/` prefix — enough to warrant grouped pages, not one giant list.
+Hook reference pages document `do_action`/`apply_filters` extension points. FluentPlayer exposes **15 actions** and **77 filters** (free tree) under the `fluent_player/` prefix — enough to warrant grouped pages, not one giant list.
 
 ## Page organization
 
 Prefer **grouped pages** over a single dump (groups from `DEV-SURFACE.md` §2):
 - `hooks/index.md` — what hooks are, the version-stability warning, links to the groups, and the "discover all" grep tip.
-- `hooks/actions.md` — the 12 actions (media lifecycle, email, watch, registries).
+- `hooks/actions.md` — the 15 actions (media lifecycle, email, watch, registries, FluentCRM behavior).
 - `hooks/media-rendering.md` — `block_media_output`, `media_block_vars`, `media_default_settings`, `default_preload`, `allowed_media_providers`, etc.
 - `hooks/access-gating.md` — `media_locked_html`, `access_denied_message`, etc.
 - `hooks/email-providers.md` — `email_providers`, `email_data`, `email_export_columns`, `email_template`, etc.
@@ -64,7 +64,7 @@ add_filter('fluent_player/<hook_name>', function ($first, $second) {
 - **Discovery tip** belongs on `hooks/index.md`: tell readers to grep `apply_filters( 'fluent_player/` and `do_action( 'fluent_player` in their installed version for the exhaustive list.
 
 ## Generating entries (hybrid workflow)
-Don't hand-list 62 filters. Run the extractor from `fluentplayer-dev-code-to-docs` to emit stubs (name, file:line, arg count) per group, then curate each: write the description, name the args by reading the call site, add the example. The extractor keeps the *set* correct; you make it *readable*.
+Don't hand-list 77 filters. Run the extractor from `fluentplayer-dev-code-to-docs` to emit stubs (name, file:line, arg count) per group, then curate each: write the description, name the args by reading the call site, add the example. The extractor keeps the *set* correct; you make it *readable*.
 
 ## Sidebar entry
 

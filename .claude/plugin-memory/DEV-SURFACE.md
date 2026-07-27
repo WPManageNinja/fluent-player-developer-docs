@@ -7,7 +7,7 @@ Always loaded by `fluentplayer-dev-code-to-docs` before extracting or diffing.
 Counts are a **snapshot** for orientation — the extractor scripts are the source of truth per release.
 Hook prefix is `fluent_player/`. REST is the WPFluent router (`app/Http/Routes/`), each group guarded by a policy.
 
-**Latest extraction (free tree):** 10 actions, 66 filters (`npm run extract:hooks`); 9 route groups, 45 routes (`npm run extract:routes`). Regenerate into `_generated/` before each sync.
+**Latest extraction (free tree):** 15 actions, 77 filters (`npm run extract:hooks`) — 12 literal `do_action`, the `fluent_player/daily_cleanup` cron hook, and the two dynamically dispatched behavior actions (`fluent_player/media_milestone`, `fluent_player/layer_event`); 9 route groups, 45 routes (`npm run extract:routes`). Pro adds 8 actions / 12 filters of its own — 112 distinct hook names across both trees. Regenerate into `_generated/` before each sync.
 
 > **Free vs Pro.** This is the **free** plugin tree. Pro adds more hooks/routes (analytics, layers, playlists,
 > Mux/Bunny, timed content). Mark Pro-only hooks/endpoints and verify against the Pro build or the user before
@@ -15,7 +15,7 @@ Hook prefix is `fluent_player/`. REST is the WPFluent router (`app/Http/Routes/`
 
 ---
 
-## 1. Action hooks — `do_action('fluent_player/…')`  (12 in free tree)
+## 1. Action hooks — `do_action('fluent_player/…')`  (15 in free tree; the tables below list the literal-dispatch ones)
 
 | Action | Fired from | Doc group |
 |---|---|---|
@@ -33,7 +33,7 @@ Hook prefix is `fluent_player/`. REST is the WPFluent router (`app/Http/Routes/`
 
 ---
 
-## 2. Filter hooks — `apply_filters('fluent_player/…')`  (62 in free tree)
+## 2. Filter hooks — `apply_filters('fluent_player/…')`  (77 in free tree)
 
 Groups (for the hooks-reference IA):
 

@@ -8,7 +8,8 @@
     "build:gh-pages": "VITEPRESS_BASE=/fluentplayer-developer-docs/ vitepress build",
     "extract:hooks": "node bin/extract-hooks.mjs",
     "extract:routes": "node bin/extract-routes.mjs",
-    "extract": "npm run extract:hooks && npm run extract:routes"
+    "extract": "npm run extract:hooks && npm run extract:routes",
+    "test": "node bin/test-extractors.mjs"
   },
   "devDependencies": {
     "vitepress": "^1.6.3"
