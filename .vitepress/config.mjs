@@ -17,13 +17,14 @@ export default defineConfig({
   description: 'Developer documentation for extending the FluentPlayer WordPress plugin — hooks, REST API, extension guides, and the JS API.',
   cleanUrls: true,
   lastUpdated: true,
-  srcExclude: ['README.md'],
+  srcExclude: ['README.md', 'devdocs.md', '_generated/**'],
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Get Started', link: '/getting-started/' },
       { text: 'Hooks', link: '/hooks/' },
       { text: 'REST API', link: '/rest-api/' },
+      { text: 'Reference', link: '/reference/' },
       { text: 'User Docs', link: 'https://docs.fluentplayer.com' },
     ],
 
@@ -64,6 +65,19 @@ export default defineConfig({
           { text: 'Layers', link: '/rest-api/layers' },
           { text: 'Smartcodes', link: '/rest-api/smartcodes' },
           { text: 'Migration', link: '/rest-api/migration' },
+          { text: 'AJAX Endpoints', link: '/rest-api/ajax' },
+          { text: 'Pro Routes', link: '/rest-api/pro' },
+        ],
+      },
+      {
+        text: 'Reference',
+        items: [
+          { text: 'Overview', link: '/reference/' },
+          { text: 'Shortcodes', link: '/reference/shortcodes' },
+          { text: 'Blocks', link: '/reference/blocks' },
+          { text: 'DOM Attributes', link: '/reference/dom-attributes' },
+          { text: 'Data Model', link: '/reference/data-model' },
+          { text: 'Capabilities', link: '/reference/capabilities' },
         ],
       },
       {
@@ -71,6 +85,9 @@ export default defineConfig({
         items: [
           { text: 'Overview', link: '/extending/' },
           { text: 'Custom Email Provider', link: '/extending/custom-email-provider' },
+          { text: 'Custom Integration', link: '/extending/custom-integration' },
+          { text: 'Behavior Handler', link: '/extending/behavior-handler' },
+          { text: 'Free → Pro Contract', link: '/extending/free-pro-contract' },
         ],
       },
       {
