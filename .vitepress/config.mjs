@@ -24,6 +24,7 @@ export default defineConfig({
   ],
   themeConfig: {
     logo: '/logo.svg',
+    siteTitle: 'Developer Docs',
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Get Started', link: '/getting-started/' },
