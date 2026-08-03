@@ -29,9 +29,6 @@ features:
   - title: REST API
     details: 45 free routes and 102 Pro routes under /wp-json/fluent-player/v2/, grouped by policy so you can see which capability guards each one.
     link: /rest-api/
-  - title: Pro & AJAX surface
-    details: The routes FluentPlayer Pro adds, and the admin-ajax.php actions the frontend player calls for email capture, unlock, and analytics.
-    link: /rest-api/pro
   - title: Extending FluentPlayer
     details: Build a custom email provider, integration, dynamic media source, or smartcode against the plugin's base classes.
     link: /extending/
